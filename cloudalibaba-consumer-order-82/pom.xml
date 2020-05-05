@@ -9,15 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-consumer-order-80</artifactId>
+    <artifactId>cloudalibaba-consumer-order-82</artifactId>
 
-
+    <!--通用部分.开始-->
     <dependencies>
-        <dependency><!-- 引入自己定义的api通用包，可以使用Payment支付Entity -->
-            <groupId>cn.mamp.springcloud</groupId>
-            <artifactId>cloud-api-commons</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -42,11 +37,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!--eureka-client-->
+        <!--通用部分.结束-->
+        <!--Nacos -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
 </project>
